@@ -81,13 +81,13 @@ export const Route = createRootRouteWithContext<{ queryClient: QueryClient }>()(
     meta: [
       { charSet: "utf-8" },
       { name: "viewport", content: "width=device-width, initial-scale=1" },
-      { title: "Aabharan — Elegant Handcrafted Jewelry" },
+      { title: "Udita's Creation — Elegant Handcrafted Jewelry" },
       { name: "description", content: "Handcrafted fashion jewelry for the modern Indian woman — earrings, necklaces, bangles, bracelets, rings, anklets and bridal sets." },
-      { name: "author", content: "Aabharan" },
-      { property: "og:title", content: "Aabharan — Elegant Handcrafted Jewelry" },
+      { name: "author", content: "Udita's Creation" },
+      { property: "og:title", content: "Udita's Creation — Elegant Handcrafted Jewelry" },
       { property: "og:description", content: "Small-batch, handcrafted fashion jewelry designed in India." },
       { property: "og:type", content: "website" },
-      { property: "og:site_name", content: "Aabharan" },
+      { property: "og:site_name", content: "Udita's Creation" },
       { name: "twitter:card", content: "summary_large_image" },
     ],
     links: [

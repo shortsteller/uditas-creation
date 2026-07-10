@@ -9,9 +9,9 @@ import { WhatsAppButton } from "@/components/wa-button";
 export const Route = createFileRoute("/contact")({
   head: () => ({
     meta: [
-      { title: "Contact — Aabharan Jewelry" },
-      { name: "description", content: "Get in touch with Aabharan — WhatsApp, email, Instagram or visit our studio in Delhi." },
-      { property: "og:title", content: "Contact — Aabharan Jewelry" },
+      { title: "Contact — Udita's Creation Jewelry" },
+      { name: "description", content: "Get in touch with Udita's Creation — WhatsApp, email, Instagram or visit our studio in Delhi." },
+      { property: "og:title", content: "Contact — Udita's Creation Jewelry" },
       { property: "og:url", content: "/contact" },
     ],
     links: [{ rel: "canonical", href: "/contact" }],
@@ -25,7 +25,7 @@ function ContactPage() {
     e.preventDefault();
     setSending(true);
     const data = new FormData(e.currentTarget);
-    const msg = `Hi Aabharan!\n\nName: ${data.get("name")}\nEmail: ${data.get("email")}\n\n${data.get("message")}`;
+    const msg = `Hi Udita's Creation!\n\nName: ${data.get("name")}\nEmail: ${data.get("email")}\n\n${data.get("message")}`;
     setTimeout(() => {
       setSending(false);
       toast.success("Opening WhatsApp with your message…");
@@ -59,7 +59,7 @@ function ContactPage() {
           </div>
 
           <div className="mt-8 flex gap-3">
-            <WhatsAppButton message="Hi Aabharan!">WhatsApp</WhatsAppButton>
+            <WhatsAppButton message="Hi Udita's Creation!">WhatsApp</WhatsAppButton>
             <a href={SITE.instagram} target="_blank" rel="noreferrer"
                className="grid h-11 w-11 place-items-center rounded-full border border-border transition hover:border-gold hover:text-gold">
               <Instagram className="h-4 w-4" />

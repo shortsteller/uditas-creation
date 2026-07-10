@@ -8,9 +8,9 @@ import { WhatsAppButton } from "@/components/wa-button";
 export const Route = createFileRoute("/shop")({
   head: () => ({
     meta: [
-      { title: "Shop — Aabharan Jewelry" },
-      { name: "description", content: "Browse handcrafted earrings, necklaces, bangles, rings, anklets and bridal sets from Aabharan." },
-      { property: "og:title", content: "Shop — Aabharan Jewelry" },
+      { title: "Shop — Udita's Creation Jewelry" },
+      { name: "description", content: "Browse handcrafted earrings, necklaces, bangles, rings, anklets and bridal sets from Udita's Creation." },
+      { property: "og:title", content: "Shop — Udita's Creation Jewelry" },
       { property: "og:description", content: "Handcrafted fashion jewelry, thoughtfully priced." },
       { property: "og:url", content: "/shop" },
     ],
@@ -126,7 +126,7 @@ function ShopPage() {
                   <WhatsAppButton
                     variant="outline"
                     className="mt-auto w-full"
-                    message={`Hi Aabharan! I'd like to order ${p.name} (₹${p.price}).`}
+                    message={`Hi Udita's Creation! I'd like to order ${p.name} (₹${p.price}).`}
                   >
                     Order on WhatsApp
                   </WhatsAppButton>

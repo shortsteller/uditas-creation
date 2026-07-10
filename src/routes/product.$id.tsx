@@ -14,14 +14,14 @@ export const Route = createFileRoute("/product/$id")({
   },
   head: ({ loaderData }) => {
     if (!loaderData) {
-      return { meta: [{ title: "Not found — Aabharan" }, { name: "robots", content: "noindex" }] };
+      return { meta: [{ title: "Not found — Udita's Creation" }, { name: "robots", content: "noindex" }] };
     }
     const { product } = loaderData;
     return {
       meta: [
-        { title: `${product.name} — Aabharan` },
+        { title: `${product.name} — Udita's Creation` },
         { name: "description", content: product.short },
-        { property: "og:title", content: `${product.name} — Aabharan` },
+        { property: "og:title", content: `${product.name} — Udita's Creation` },
         { property: "og:description", content: product.short },
         { property: "og:type", content: "product" },
         { property: "og:url", content: `/product/${product.id}` },
@@ -116,7 +116,7 @@ function ProductPage() {
 
           <div className="mt-8 flex flex-wrap items-center gap-3">
             <WhatsAppButton
-              message={`Hi Aabharan! I'd like to order ${product.name} (${color}) — ₹${product.price}.`}
+              message={`Hi Udita's Creation! I'd like to order ${product.name} (${color}) — ₹${product.price}.`}
               className="min-w-[220px]"
             >
               Order on WhatsApp

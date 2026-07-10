@@ -5,9 +5,9 @@ import { CATEGORIES, PRODUCTS } from "@/lib/products";
 export const Route = createFileRoute("/categories")({
   head: () => ({
     meta: [
-      { title: "Categories — Aabharan Jewelry" },
+      { title: "Categories — Udita's Creation Jewelry" },
       { name: "description", content: "Explore earrings, necklaces, bangles, bracelets, rings, anklets, sets and new arrivals." },
-      { property: "og:title", content: "Categories — Aabharan Jewelry" },
+      { property: "og:title", content: "Categories — Udita's Creation Jewelry" },
       { property: "og:url", content: "/categories" },
     ],
     links: [{ rel: "canonical", href: "/categories" }],
