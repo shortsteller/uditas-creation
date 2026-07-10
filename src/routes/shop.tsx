@@ -126,7 +126,7 @@ function ShopPage() {
                   <WhatsAppButton
                     variant="outline"
                     className="mt-auto w-full"
-                    message={`Hi Aabharan! I'd like to order ${p.name} (₹${p.price}).`}
+                    message={`Hi Udita's Creation! I'd like to order ${p.name} (₹${p.price}).`}
                   >
                     Order on WhatsApp
                   </WhatsAppButton>

@@ -32,7 +32,7 @@ function AboutPage() {
           </h1>
           <div className="mt-6 space-y-4 text-muted-foreground">
             <p>
-              Aabharan began at a kitchen table in Old Delhi, where three generations
+              Udita's Creation began at a kitchen table in Old Delhi, where three generations
               of women in our family strung their first jhumkas together for a cousin's wedding.
               What started as a gift turned into a small studio — and then into a promise.
             </p>

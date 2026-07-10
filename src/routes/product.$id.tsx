@@ -116,7 +116,7 @@ function ProductPage() {
 
           <div className="mt-8 flex flex-wrap items-center gap-3">
             <WhatsAppButton
-              message={`Hi Aabharan! I'd like to order ${product.name} (${color}) — ₹${product.price}.`}
+              message={`Hi Udita's Creation! I'd like to order ${product.name} (${color}) — ₹${product.price}.`}
               className="min-w-[220px]"
             >
               Order on WhatsApp
