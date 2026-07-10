@@ -12,7 +12,7 @@ export const Route = createFileRoute("/")({
 const testimonials = [
   { name: "Ananya S.", city: "Mumbai", quote: "The craftsmanship is exceptional. I get compliments every time I wear my Meher choker." },
   { name: "Priya R.", city: "Bengaluru", quote: "Beautifully packaged and even more beautiful in person. My go-to for gifting." },
-  { name: "Ritika M.", city: "Delhi", quote: "Affordable luxury done right. Feels heirloom-worthy." },
+  { name: "Ritika M.", city: "Kolkata", quote: "Affordable luxury done right. Feels heirloom-worthy." },
 ];
 
 function Index() {
@@ -38,21 +38,18 @@ function Index() {
               for <em className="text-gold not-italic">Every</em> Occasion.
             </h1>
             <p className="mt-6 max-w-lg text-base text-muted-foreground md:text-lg">
-              Handcrafted in small batches by artisans across India. Udita's Creation blends
-              timeless silhouettes with contemporary polish — designed to be worn,
-              layered and loved daily.
+              Handcrafted in small batches in our Kolkata studio. Udita's Creation blends
+              timeless silhouettes with contemporary polish — stylish, affordable and elegant
+              jewelry for every occasion.
             </p>
             <div className="mt-8 flex flex-wrap items-center gap-3">
               <Link
-                to="/shop"
+                to="/gallery"
                 className="inline-flex items-center gap-2 rounded-full bg-primary px-7 py-3.5 text-xs uppercase tracking-[0.25em] text-primary-foreground transition hover:opacity-90"
               >
-                Shop Now <ArrowRight className="h-4 w-4" />
+                View Gallery <ArrowRight className="h-4 w-4" />
               </Link>
-              <WhatsAppButton
-                variant="outline"
-                message="Hi Udita's Creation! I'd love to know more about your collection."
-              >
+              <WhatsAppButton variant="outline">
                 Chat on WhatsApp
               </WhatsAppButton>
             </div>
@@ -107,7 +104,7 @@ function Index() {
             <p className="text-xs uppercase tracking-[0.3em] text-gold">Featured</p>
             <h2 className="mt-2 font-serif text-3xl md:text-5xl">Curated collections</h2>
           </div>
-          <Link to="/categories" className="hidden text-xs uppercase tracking-[0.25em] gold-underline md:inline">
+          <Link to="/gallery" className="hidden text-xs uppercase tracking-[0.25em] gold-underline md:inline">
             View all
           </Link>
         </div>
@@ -151,7 +148,7 @@ function Index() {
             {CATEGORIES.slice(0, 7).map((c) => (
               <Link
                 key={c.slug}
-                to="/shop"
+                to="/gallery"
                 className="rounded-full border border-border bg-background px-5 py-2 text-xs uppercase tracking-[0.2em] transition hover:border-gold hover:text-gold"
               >
                 {c.name}
@@ -167,8 +164,8 @@ function Index() {
             <p className="text-xs uppercase tracking-[0.3em] text-gold">Beloved</p>
             <h2 className="mt-2 font-serif text-3xl md:text-5xl">Best sellers</h2>
           </div>
-          <Link to="/shop" className="hidden text-xs uppercase tracking-[0.25em] gold-underline md:inline">
-            Shop all
+          <Link to="/gallery" className="hidden text-xs uppercase tracking-[0.25em] gold-underline md:inline">
+            View gallery
           </Link>
         </div>
         <div className="mt-10 grid gap-6 sm:grid-cols-2 lg:grid-cols-4">
@@ -228,7 +225,7 @@ function Index() {
 
       <section className="mx-auto max-w-7xl px-5 py-20 md:px-8">
         <div className="flex flex-col items-center text-center">
-          <p className="text-xs uppercase tracking-[0.3em] text-gold">@aabharan</p>
+          <p className="text-xs uppercase tracking-[0.3em] text-gold">@uditascreation</p>
           <h2 className="mt-2 font-serif text-3xl md:text-5xl">Follow the story</h2>
           <p className="mt-3 max-w-lg text-sm text-muted-foreground">
             Get styling inspiration, backstage peeks and first access to drops.

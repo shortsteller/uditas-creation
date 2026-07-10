@@ -7,15 +7,15 @@ import bracelets from "@/assets/cat-bracelets.jpg";
 import anklets from "@/assets/cat-anklets.jpg";
 
 export const CATEGORIES = [
+  { slug: "jhumkas", name: "Jhumkas", image: earrings },
   { slug: "earrings", name: "Earrings", image: earrings },
   { slug: "necklaces", name: "Necklaces", image: necklaces },
   { slug: "bangles", name: "Bangles", image: bangles },
   { slug: "bracelets", name: "Bracelets", image: bracelets },
   { slug: "rings", name: "Rings", image: rings },
   { slug: "anklets", name: "Anklets", image: anklets },
-  { slug: "sets", name: "Sets", image: sets },
+  { slug: "sets", name: "Jewelry Sets", image: sets },
   { slug: "new-arrivals", name: "New Arrivals", image: necklaces },
-  { slug: "best-sellers", name: "Best Sellers", image: sets },
 ];
 
 export type Product = {
@@ -39,7 +39,7 @@ export const PRODUCTS: Product[] = [
     id: "jhumka-royale",
     name: "Jhumka Royale",
     price: 1299,
-    category: "earrings",
+    category: "jhumkas",
     short: "Handcrafted temple-style jhumkas with pearl drops.",
     description:
       "Inspired by the temple corridors of the south, the Jhumka Royale features intricate embossed detailing and delicate pearl fringes that catch every glimmer of light.",
@@ -153,6 +153,21 @@ export const PRODUCTS: Product[] = [
     colors: ["Gold"],
     material: "Brass with 18k gold polish",
     care: "Wipe clean with a soft cloth.",
+    newArrival: true,
+  },
+  {
+    id: "chandbali-jhumka",
+    name: "Chandbali Jhumka",
+    price: 1499,
+    category: "jhumkas",
+    short: "Crescent-shaped chandbali with delicate bead work.",
+    description:
+      "A crescent-cut chandbali with intricate bead detailing — a graceful nod to Mughal-era silhouettes.",
+    image: earrings,
+    gallery: [earrings],
+    colors: ["Antique Gold"],
+    material: "Brass with gold polish",
+    care: "Store in the pouch. Avoid moisture.",
     newArrival: true,
   },
 ];

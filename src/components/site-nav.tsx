@@ -5,8 +5,7 @@ import { SITE } from "@/lib/site";
 
 const links = [
   { to: "/", label: "Home" },
-  { to: "/shop", label: "Shop" },
-  { to: "/categories", label: "Categories" },
+  { to: "/gallery", label: "Gallery" },
   { to: "/about", label: "About" },
   { to: "/contact", label: "Contact" },
 ] as const;

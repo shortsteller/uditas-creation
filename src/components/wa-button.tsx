@@ -1,13 +1,13 @@
 import { MessageCircle } from "lucide-react";
-import { waLink } from "@/lib/site";
+import { waLink, DEFAULT_WA_MESSAGE } from "@/lib/site";
 
 export function WhatsAppButton({
-  message,
+  message = DEFAULT_WA_MESSAGE,
   children = "Order on WhatsApp",
   variant = "solid",
   className = "",
 }: {
-  message: string;
+  message?: string;
   children?: React.ReactNode;
   variant?: "solid" | "outline" | "ghost";
   className?: string;
