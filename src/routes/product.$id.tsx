@@ -3,7 +3,7 @@ import { useState } from "react";
 import { motion } from "framer-motion";
 import { ArrowLeft, Share2, ChevronRight } from "lucide-react";
 import { toast } from "sonner";
-import { getProduct, PRODUCTS } from "@/lib/products";
+import { getProduct, PRODUCTS, type Product } from "@/lib/products";
 import { WhatsAppButton } from "@/components/wa-button";
 
 export const Route = createFileRoute("/product/$id")({
@@ -44,7 +44,7 @@ function ProductNotFound() {
 }
 
 function ProductPage() {
-  const { product } = Route.useLoaderData();
+  const { product } = Route.useLoaderData() as { product: Product };
   const [active, setActive] = useState(0);
   const [color, setColor] = useState(product.colors[0]);
   const [zoom, setZoom] = useState({ x: 50, y: 50, on: false });
@@ -86,7 +86,7 @@ function ProductPage() {
           </div>
           {product.gallery.length > 1 ? (
             <div className="mt-4 grid grid-cols-4 gap-3">
-              {product.gallery.map((g, i) => (
+              {product.gallery.map((g: string, i: number) => (
                 <button key={i} onClick={() => setActive(i)}
                         className={`overflow-hidden rounded-xl border transition ${active === i ? "border-gold" : "border-border/50"}`}>
                   <img src={g} alt="" className="aspect-square w-full object-cover" />
@@ -105,7 +105,7 @@ function ProductPage() {
           <div className="mt-8">
             <p className="text-xs uppercase tracking-[0.25em] text-muted-foreground">Color</p>
             <div className="mt-3 flex flex-wrap gap-2">
-              {product.colors.map((c) => (
+              {product.colors.map((c: string) => (
                 <button key={c} onClick={() => setColor(c)}
                         className={`rounded-full border px-4 py-2 text-xs uppercase tracking-[0.2em] transition ${color === c ? "border-gold bg-gold/10 text-gold" : "border-border hover:border-gold"}`}>
                   {c}
