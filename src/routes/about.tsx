@@ -8,7 +8,7 @@ export const Route = createFileRoute("/about")({
   head: () => ({
     meta: [
       { title: "Our Story — Udita's Creation Jewelry" },
-      { name: "description", content: "A family-run jewelry studio blending heritage craft with contemporary design." },
+      { name: "description", content: "Udita's Creation is a Kolkata-based fashion jewelry studio offering stylish, affordable and elegant jewelry for every occasion." },
       { property: "og:title", content: "Our Story — Udita's Creation Jewelry" },
       { property: "og:url", content: "/about" },
     ],
@@ -32,20 +32,21 @@ function AboutPage() {
           </h1>
           <div className="mt-6 space-y-4 text-muted-foreground">
             <p>
-              Udita's Creation began at a kitchen table in Old Delhi, where three generations
-              of women in our family strung their first jhumkas together for a cousin's wedding.
-              What started as a gift turned into a small studio — and then into a promise.
+              Udita's Creation is a Kolkata-based fashion jewelry studio. It began at a
+              kitchen table in Kolkata, West Bengal, where three generations of women in
+              our family strung their first jhumkas together for a cousin's wedding. What
+              started as a gift turned into a small studio — and then into a promise.
             </p>
             <p>
-              Every piece we make is designed by our founder Meher, and handcrafted with
-              artisan partners we've known for years. We use ethically sourced brass,
-              real freshwater pearls and hand-set kundan to create jewelry that feels
-              heirloom-worthy but stays kind on your budget.
+              Every piece we make is designed in-house and handcrafted with artisan partners
+              we've known for years. We use ethically sourced brass, real freshwater pearls
+              and hand-set kundan to create stylish, affordable and elegant jewelry that
+              feels heirloom-worthy but stays kind on your budget.
             </p>
             <p>
               We believe beautiful things should be worn often — not saved for occasions.
               So we obsess over comfort, finish and the small details that make a piece
-              feel like <em>yours</em>.
+              feel like <em>yours</em>, for every occasion.
             </p>
           </div>
           <div className="mt-10 grid grid-cols-3 gap-6 border-t border-border/60 pt-8">

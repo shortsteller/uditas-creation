@@ -38,7 +38,7 @@ function ProductNotFound() {
     <div className="mx-auto max-w-3xl px-5 py-24 text-center">
       <h1 className="font-serif text-4xl">Piece not found</h1>
       <p className="mt-3 text-muted-foreground">This item may have sold out or moved.</p>
-      <Link to="/shop" className="mt-6 inline-flex items-center gap-2 gold-underline">Back to shop <ChevronRight className="h-4 w-4" /></Link>
+      <Link to="/gallery" className="mt-6 inline-flex items-center gap-2 gold-underline">Back to gallery <ChevronRight className="h-4 w-4" /></Link>
     </div>
   );
 }
@@ -63,8 +63,8 @@ function ProductPage() {
 
   return (
     <div className="mx-auto max-w-7xl px-5 py-10 md:px-8 md:py-16">
-      <Link to="/shop" className="inline-flex items-center gap-2 text-xs uppercase tracking-[0.25em] text-muted-foreground gold-underline">
-        <ArrowLeft className="h-4 w-4" /> Back to shop
+      <Link to="/gallery" className="inline-flex items-center gap-2 text-xs uppercase tracking-[0.25em] text-muted-foreground gold-underline">
+        <ArrowLeft className="h-4 w-4" /> Back to gallery
       </Link>
 
       <div className="mt-8 grid gap-10 md:grid-cols-[1.1fr_1fr] md:gap-16">
@@ -115,10 +115,7 @@ function ProductPage() {
           </div>
 
           <div className="mt-8 flex flex-wrap items-center gap-3">
-            <WhatsAppButton
-              message={`Hi Udita's Creation! I'd like to order ${product.name} (${color}) — ₹${product.price}.`}
-              className="min-w-[220px]"
-            >
+            <WhatsAppButton className="min-w-[220px]">
               Order on WhatsApp
             </WhatsAppButton>
             <button onClick={share}

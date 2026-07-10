@@ -10,7 +10,7 @@ export const Route = createFileRoute("/contact")({
   head: () => ({
     meta: [
       { title: "Contact — Udita's Creation Jewelry" },
-      { name: "description", content: "Get in touch with Udita's Creation — WhatsApp, email, Instagram or visit our studio in Delhi." },
+      { name: "description", content: "Get in touch with Udita's Creation — WhatsApp, email or Instagram. Based in Kolkata, West Bengal, India." },
       { property: "og:title", content: "Contact — Udita's Creation Jewelry" },
       { property: "og:url", content: "/contact" },
     ],
@@ -72,8 +72,8 @@ function ContactPage() {
 
           <div className="mt-10 overflow-hidden rounded-3xl border border-border/60">
             <iframe
-              title="Studio location"
-              src="https://www.openstreetmap.org/export/embed.html?bbox=77.22%2C28.63%2C77.24%2C28.65&layer=mapnik"
+              title="Studio location — Kolkata, West Bengal"
+              src="https://www.openstreetmap.org/export/embed.html?bbox=88.30%2C22.53%2C88.40%2C22.60&layer=mapnik"
               className="h-64 w-full"
               loading="lazy"
             />
