@@ -1,5 +1,5 @@
 export const SITE = {
-  name: "Aabharan",
+  name: "Udita's Creation",
   tagline: "Elegant Jewelry for Every Occasion",
   whatsapp: "919999999999", // change to your WA number (no + or spaces)
   email: "hello@aabharan.co",

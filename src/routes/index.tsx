@@ -38,7 +38,7 @@ function Index() {
               for <em className="text-gold not-italic">Every</em> Occasion.
             </h1>
             <p className="mt-6 max-w-lg text-base text-muted-foreground md:text-lg">
-              Handcrafted in small batches by artisans across India. Aabharan blends
+              Handcrafted in small batches by artisans across India. Udita's Creation blends
               timeless silhouettes with contemporary polish — designed to be worn,
               layered and loved daily.
             </p>
@@ -51,7 +51,7 @@ function Index() {
               </Link>
               <WhatsAppButton
                 variant="outline"
-                message="Hi Aabharan! I'd love to know more about your collection."
+                message="Hi Udita's Creation! I'd love to know more about your collection."
               >
                 Chat on WhatsApp
               </WhatsAppButton>

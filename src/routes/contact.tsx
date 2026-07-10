@@ -9,9 +9,9 @@ import { WhatsAppButton } from "@/components/wa-button";
 export const Route = createFileRoute("/contact")({
   head: () => ({
     meta: [
-      { title: "Contact — Aabharan Jewelry" },
-      { name: "description", content: "Get in touch with Aabharan — WhatsApp, email, Instagram or visit our studio in Delhi." },
-      { property: "og:title", content: "Contact — Aabharan Jewelry" },
+      { title: "Contact — Udita's Creation Jewelry" },
+      { name: "description", content: "Get in touch with Udita's Creation — WhatsApp, email, Instagram or visit our studio in Delhi." },
+      { property: "og:title", content: "Contact — Udita's Creation Jewelry" },
       { property: "og:url", content: "/contact" },
     ],
     links: [{ rel: "canonical", href: "/contact" }],
