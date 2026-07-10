@@ -155,6 +155,21 @@ export const PRODUCTS: Product[] = [
     care: "Wipe clean with a soft cloth.",
     newArrival: true,
   },
+  {
+    id: "chandbali-jhumka",
+    name: "Chandbali Jhumka",
+    price: 1499,
+    category: "jhumkas",
+    short: "Crescent-shaped chandbali with delicate bead work.",
+    description:
+      "A crescent-cut chandbali with intricate bead detailing — a graceful nod to Mughal-era silhouettes.",
+    image: earrings,
+    gallery: [earrings],
+    colors: ["Antique Gold"],
+    material: "Brass with gold polish",
+    care: "Store in the pouch. Avoid moisture.",
+    newArrival: true,
+  },
 ];
 
 export function getProduct(id: string) {
